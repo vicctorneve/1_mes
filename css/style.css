@@ -1,0 +1,136 @@
+body{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   background-color: #4c065e;
+   text-align: center;
+}
+
+section.home{
+   color: #e71183;
+
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+section.home img{
+   max-width: 230px;
+   width: 100%;
+   border-radius: 20px;
+   height: auto;
+}
+
+.cronometro{
+   background-color: rgba(255, 255, 255, 0.26);
+   font-weight: bold;
+   max-width: 400px;
+   padding: 10px;
+   width: 100%;
+   border-radius: 10px;
+   margin: 10px 0;
+   font-size: 1.2em;
+}
+
+.traco{
+   background-color: rgb(255, 255, 255);
+   max-width: 200px;
+   margin: 20px auto;
+   width: 100%;
+   height: 1px;
+}
+
+
+ 
+/* Carrosel */
+
+section.qualidades{
+   padding: 20px;
+   border-radius: 20px;
+   
+}
+
+.carrossel {
+   position: relative;
+   max-width: 400px;
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+   background-color: rgba(255, 255, 255, 0.164);
+   border-radius: 20px;
+}
+
+.slides {
+   display: flex;
+   transition: transform 0.5s ease;
+}
+
+.slide {
+   text-align: center;
+   max-width: 400px;
+   width: 100%;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 650px; /* Altura do carrossel */
+   font-size: 24px; /* Tamanho do texto */
+   color: #e71183;
+   border-radius: 10px;
+}
+
+.slide p{
+   max-width: 350px;
+   width: 100%;
+}
+
+.slide span{
+   color: black;
+   font-weight: bold;
+}
+
+.slide img{
+   width: 300px;
+   border-radius: 20px;
+   height: auto;
+}
+
+.slide.active {
+   display: flex; /* Alterado para flex para centralizar o conteúdo */
+}
+
+.prev, .next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(255, 255, 255, 0.7);
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 1000;
+   padding: 10px;
+}
+
+.prev {
+   left: 10px;
+}
+
+.next {
+   right: 10px;
+}
+
+section.end{
+   color: #e71183;
+   max-width: 800px;
+   margin: auto;
+}
+
+footer {
+   background-color: #280231;
+   padding: 5px;
+   width: 100vw;
+   bottom: 0;
+}
